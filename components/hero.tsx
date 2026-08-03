@@ -4,9 +4,10 @@ import FlipWords from "./flip-words-name";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Image from "next/image";
+import { Preview } from '@/components/ui/preview';
 
 export default function Hero() {
-  const resumeViewUrl = process.env.NEXT_PUBLIC_RESUME_VIEW_URL;
+  const GOOGLE_DRIVE_FILE_ID = '1JmGCF-75KNVIzyi0U7yNQz_Bkr3p6rtA';
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-8">
@@ -67,15 +68,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-3">
-          <a
-            href={resumeViewUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[9px] sm:text-[10px] font-mono text-muted-foreground/60 hover:text-foreground transition-colors no-underline flex items-center justify-center gap-1.5"
-          >
-            View Resume
-          </a>
+        <div className="mt-3 text-[9px] sm:text-[10px] font-mono text-muted-foreground/60 hover:text-foreground transition-colors no-underline flex items-center justify-center gap-1.5">
+          <Preview 
+            fileId={GOOGLE_DRIVE_FILE_ID} 
+            triggerText="View Resume"
+          />
         </div>
       </div>
     </section>

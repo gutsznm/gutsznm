@@ -191,7 +191,7 @@ export default function Posts() {
                       {post.pubDate}
                     </span>
                   </div>
-                  <h3 className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">
+                  <h3 className="text-sm font-medium transition-colors line-clamp-2 text-muted-foreground">
                     {post.title}
                   </h3>
                   {post.description && (
@@ -212,7 +212,7 @@ export default function Posts() {
             href="https://medium.com/@denisahendra123"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs text-muted-foreground/60 hover:text-foreground transition-colors"
+            className="text-sm text-muted-foreground/60 hover:text-foreground transition-colors"
           >
             More on Medium
           </a>
