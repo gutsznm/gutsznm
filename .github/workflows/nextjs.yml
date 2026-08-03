@@ -75,9 +75,8 @@ jobs:
       
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-        env:  # <--- TAMBAHKAN DI SINI
+        env: 
           NEXT_PUBLIC_RESUME_VIEW_URL: ${{ secrets.NEXT_PUBLIC_API_KEY }}
-          # Tambahkan environment variables lainnya di sini
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

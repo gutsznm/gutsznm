@@ -25,7 +25,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  basePath: "/denisahendra",
 };
 
 export default nextConfig;
