@@ -42,7 +42,6 @@ interface RSSResponse {
   items: RSSItem[];
 }
 
-// Fallback posts - pindah ke atas sebelum dipakai
 const getFallbackPosts = (): Post[] => {
   return [
     {
@@ -191,15 +190,18 @@ export default function Posts() {
                       {post.pubDate}
                     </span>
                   </div>
-                  <h3 className="text-sm font-medium transition-colors line-clamp-2 text-muted-foreground">
+                  
+                  <h3 className="text-sm font-medium transition-colors line-clamp-2 text-muted-foreground group-hover:text-primary">
                     {post.title}
                   </h3>
+                  
                   {post.description && (
                     <p className="text-xs text-muted-foreground/70 mt-1 line-clamp-2">
                       {post.description}
                     </p>
                   )}
                   <span className="text-xs text-muted-foreground/30 group-hover:text-muted-foreground/60 transition-colors inline-block mt-2">
+                    Read more
                   </span>
                 </div>
               </div>

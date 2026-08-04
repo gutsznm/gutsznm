@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import { motion } from "motion/react";
 
 type SpotlightProps = {
@@ -15,9 +15,9 @@ type SpotlightProps = {
 };
 
 export const Spotlight = ({
-  gradientFirst = "radial-gradient(68.54% 68.72% at 55.02% 31.46%, rgba(0, 255, 65, 0.12) 0%, rgba(0, 200, 50, 0.04) 50%, rgba(0, 150, 30, 0) 80%)",
-  gradientSecond = "radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 65, 0.08) 0%, rgba(0, 200, 50, 0.03) 80%, transparent 100%)",
-  gradientThird = "radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 65, 0.05) 0%, rgba(0, 180, 40, 0.02) 80%, transparent 100%)",
+  gradientFirst = "radial-gradient(68.54% 68.72% at 55.02% 31.46%, var(--spotlight-color-1) 0%, var(--spotlight-color-2) 50%, var(--spotlight-color-3) 80%)",
+  gradientSecond = "radial-gradient(50% 50% at 50% 50%, var(--spotlight-color-2) 0%, var(--spotlight-color-3) 80%, transparent 100%)",
+  gradientThird = "radial-gradient(50% 50% at 50% 50%, var(--spotlight-color-3) 0%, var(--spotlight-color-4) 80%, transparent 100%)",
   translateY = -350,
   width = 560,
   height = 1380,
@@ -27,27 +27,14 @@ export const Spotlight = ({
 }: SpotlightProps = {}) => {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: 1.5,
-      }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
       className="pointer-events-none absolute inset-0 h-full w-full"
     >
       <motion.div
-        animate={{
-          x: [0, xOffset, 0],
-        }}
-        transition={{
-          duration,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut",
-        }}
+        animate={{ x: [0, xOffset, 0] }}
+        transition={{ duration, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
         className="absolute top-0 left-0 w-screen h-screen z-40 pointer-events-none"
       >
         <div
@@ -57,9 +44,8 @@ export const Spotlight = ({
             width: `${width}px`,
             height: `${height}px`,
           }}
-          className={`absolute top-0 left-0`}
+          className="absolute top-0 left-0"
         />
-
         <div
           style={{
             transform: "rotate(-45deg) translate(5%, -50%)",
@@ -67,9 +53,8 @@ export const Spotlight = ({
             width: `${smallWidth}px`,
             height: `${height}px`,
           }}
-          className={`absolute top-0 left-0 origin-top-left`}
+          className="absolute top-0 left-0 origin-top-left"
         />
-
         <div
           style={{
             transform: "rotate(-45deg) translate(-180%, -70%)",
@@ -77,20 +62,13 @@ export const Spotlight = ({
             width: `${smallWidth}px`,
             height: `${height}px`,
           }}
-          className={`absolute top-0 left-0 origin-top-left`}
+          className="absolute top-0 left-0 origin-top-left"
         />
       </motion.div>
 
       <motion.div
-        animate={{
-          x: [0, -xOffset, 0],
-        }}
-        transition={{
-          duration,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut",
-        }}
+        animate={{ x: [0, -xOffset, 0] }}
+        transition={{ duration, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
         className="absolute top-0 right-0 w-screen h-screen z-40 pointer-events-none"
       >
         <div
@@ -100,9 +78,8 @@ export const Spotlight = ({
             width: `${width}px`,
             height: `${height}px`,
           }}
-          className={`absolute top-0 right-0`}
+          className="absolute top-0 right-0"
         />
-
         <div
           style={{
             transform: "rotate(45deg) translate(-5%, -50%)",
@@ -110,9 +87,8 @@ export const Spotlight = ({
             width: `${smallWidth}px`,
             height: `${height}px`,
           }}
-          className={`absolute top-0 right-0 origin-top-right`}
+          className="absolute top-0 right-0 origin-top-right"
         />
-
         <div
           style={{
             transform: "rotate(45deg) translate(180%, -70%)",
@@ -120,7 +96,7 @@ export const Spotlight = ({
             width: `${smallWidth}px`,
             height: `${height}px`,
           }}
-          className={`absolute top-0 right-0 origin-top-right`}
+          className="absolute top-0 right-0 origin-top-right"
         />
       </motion.div>
     </motion.div>
