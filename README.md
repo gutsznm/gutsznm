@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=500&size=28&duration=2000&pause=800&color=1A1A1A&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Alex+Reynolds;Software+Engineer;System+Architect" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=500&size=28&duration=2000&pause=800&color=1A1A1A&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Deni+Sahendra;Software+Engineer;System+Architect" alt="Typing SVG" />
   
   <br />
   
   <p style="color: #4A5568; font-size: 16px; letter-spacing: 0.3px;">
-    Building distributed systems · Writing production-grade code · 5+ years experience
+    Building distributed systems · Writing production-grade code
   </p>
   
   <br />
