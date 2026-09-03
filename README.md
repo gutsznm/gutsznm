@@ -21,20 +21,16 @@
   
   <br /><br />
   
-  <img src="https://komarev.com/ghpvc/?username=denisahendra&label=Profile%20Views&color=1A1A1A&style=flat-square" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=gutsznm&label=Profile%20Views&color=1A1A1A&style=flat-square" alt="Profile views" />
 </div>
 
----
-
-<details>
+<details open>
 <summary><strong>About Me</strong></summary>
 <br />
 
 I am a freshgraduate with expertise in backend systems, cloud infrastructure, and API design.
 
 </details>
-
----
 
 <details open>
 <summary><strong>Technical Competencies</strong></summary>
@@ -109,7 +105,6 @@ I am a freshgraduate with expertise in backend systems, cloud infrastructure, an
 
 </details>
 
----
 
 <!-- <details open>
 <summary><strong>Featured Projects</strong></summary>
@@ -180,7 +175,6 @@ I am a freshgraduate with expertise in backend systems, cloud infrastructure, an
 
 </details> -->
 
----
 
 <!-- <details>
 <summary><strong>Professional Experience</strong></summary>
@@ -215,7 +209,6 @@ I am a freshgraduate with expertise in backend systems, cloud infrastructure, an
 
 </details> -->
 
----
 
 <!-- <div align="center">
   <table>
@@ -244,10 +237,9 @@ I am a freshgraduate with expertise in backend systems, cloud infrastructure, an
   </table>
 </div> -->
 
----
 
 <div align="center">
   <sub>
-    Built with clarity · <a href="https://github.com/denisahendra">Gutsznm</a> · 2026
+    Built with clarity · <a href="https://github.com/gutsznm">Gutsznm</a> · 2026
   </sub>
 </div>
