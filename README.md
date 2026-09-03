@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=500&size=28&duration=2000&pause=800&color=1A1A1A&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Deni+Sahendra;Software+Engineer;System+Architect" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=500&size=28&duration=2000&pause=800&color=FFFFFF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Deni+Sahendra;Cloud+Enthusiast;DevOps+Enthusiast" alt="Typing SVG" />
   
   <br />
   
   <p style="color: #4A5568; font-size: 16px; letter-spacing: 0.3px;">
-    Building distributed systems · Writing production-grade code
+    Building Scalable & Reliable Infrastructure
   </p>
   
   <br />
@@ -12,7 +12,7 @@
   <a href="https://www.linkedin.com/in/denisahendra/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
-  <a href="https://gutsznm.github.io/me/">
+  <a href="https://gutsznm.github.io/gutsznm/">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white" />
   </a>
   <a href="mailto:denisahendra123@email.com">
@@ -30,14 +30,7 @@
 <summary><strong>About Me</strong></summary>
 <br />
 
-I am a software engineer with expertise in backend systems, cloud infrastructure, and API design. I have worked across fintech, e-commerce, and developer tooling industries — delivering scalable solutions that serve millions of users.
-
-My approach prioritizes code maintainability, system reliability, and clear documentation. I actively contribute to open-source projects and mentor junior developers.
-
-- Currently exploring: Distributed systems and Rust
-- Learning: Advanced Kubernetes operators and service mesh
-- Open to: Technical consulting and system design reviews
-- Location: Singapore
+I am a freshgraduate with expertise in backend systems, cloud infrastructure, and API design.
 
 </details>
 
@@ -53,17 +46,12 @@ My approach prioritizes code maintainability, system reliability, and clear docu
     <td width="75%">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="20" /> TypeScript &nbsp;
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="20" /> Python &nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="20" /> Golang &nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="20" /> Java
     </td>
   </tr>
   <tr>
     <td><strong>Frameworks</strong></td>
     <td>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> React &nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="20" /> Next.js &nbsp;
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="20" /> Node.js &nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="20" /> Spring Boot
     </td>
   </tr>
   <tr>
@@ -71,7 +59,6 @@ My approach prioritizes code maintainability, system reliability, and clear docu
     <td>
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="20" /> PostgreSQL &nbsp;
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="20" /> MongoDB &nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="20" /> Redis &nbsp;
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="20" /> MySQL
     </td>
   </tr>
@@ -81,14 +68,14 @@ My approach prioritizes code maintainability, system reliability, and clear docu
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="20" /> Docker &nbsp;
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="20" /> Kubernetes &nbsp;
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg" width="20" /> AWS &nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/gcp-original.svg" width="20" /> GCP &nbsp;
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="20" /> Terraform
     </td>
   </tr>
   <tr>
     <td><strong>Tools</strong></td>
     <td>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="20" /> Git &nbsp;
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="20" /> Linux &nbsp;
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="20" /> Github &nbsp;
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="20" /> Grafana &nbsp;
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="20" /> Prometheus
     </td>
@@ -107,24 +94,24 @@ My approach prioritizes code maintainability, system reliability, and clear docu
   <table>
     <tr>
       <td width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=denisahendra&show_icons=true&hide_border=true&theme=github_dark&hide_title=true&count_private=true&icon_color=1A1A1A" width="100%" />
+        <img src="https://github-readme-stats.vercel.app/api?username=gutsznm&show_icons=true&hide_border=true&theme=github_dark&hide_title=true&count_private=true&icon_color=1A1A1A" width="100%" />
       </td>
       <td width="50%">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=denisahendra&hide_border=true&theme=github_dark&fire=1A1A1A" width="100%" />
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=gutsznm&hide_border=true&theme=github_dark&fire=1A1A1A" width="100%" />
       </td>
     </tr>
   </table>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=denisahendra&layout=compact&hide_border=true&theme=github_dark&hide_title=true&langs_count=8" width="60%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gutsznm&layout=compact&hide_border=true&theme=github_dark&hide_title=true&langs_count=8" width="60%" />
 </div>
 
 </details>
 
 ---
 
-<details open>
+<!-- <details open>
 <summary><strong>Featured Projects</strong></summary>
 <br />
 
@@ -191,11 +178,11 @@ My approach prioritizes code maintainability, system reliability, and clear docu
   </tr>
 </table>
 
-</details>
+</details> -->
 
 ---
 
-<details>
+<!-- <details>
 <summary><strong>Professional Experience</strong></summary>
 <br />
 
@@ -226,11 +213,11 @@ My approach prioritizes code maintainability, system reliability, and clear docu
   </tr>
 </table>
 
-</details>
+</details> -->
 
 ---
 
-<div align="center">
+<!-- <div align="center">
   <table>
     <tr>
       <td align="center">
@@ -255,7 +242,7 @@ My approach prioritizes code maintainability, system reliability, and clear docu
       </td>
     </tr>
   </table>
-</div>
+</div> -->
 
 ---
 
