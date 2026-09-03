@@ -80,7 +80,6 @@ I am a freshgraduate with expertise in backend systems, cloud infrastructure, an
 
 </details>
 
----
 
 <details open>
 <summary><strong>GitHub Analytics</strong></summary>
@@ -90,17 +89,27 @@ I am a freshgraduate with expertise in backend systems, cloud infrastructure, an
   <table>
     <tr>
       <td width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=gutsznm&show_icons=true&hide_border=true&theme=github_dark&hide_title=true&count_private=true&icon_color=1A1A1A" width="100%" />
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=gutsznm&show_icons=true&hide_border=true&theme=github_dark&hide_title=true&count_private=true"
+          width="100%"
+        />
       </td>
+
       <td width="50%">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=gutsznm&hide_border=true&theme=github_dark&fire=1A1A1A" width="100%" />
+        <img
+          src="https://streak-stats.demolab.com/?user=gutsznm&hide_border=true&theme=github-dark"
+          width="100%"
+        />
       </td>
     </tr>
   </table>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gutsznm&layout=compact&hide_border=true&theme=github_dark&hide_title=true&langs_count=8" width="60%" />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=gutsznm&layout=compact&hide_border=true&theme=github_dark&hide_title=true&langs_count=8"
+    width="60%"
+  />
 </div>
 
 </details>
