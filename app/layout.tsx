@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
     url: siteUrl,
-    title: "Deni Sahendra | Backend & Cloud Engineer",
-    description: "Portofolio Deni Sahendra - Backend & Cloud Engineer yang berpengalaman dalam merancang dan membangun solusi cloud serta arsitektur backend.",
+    title: "Deni Sahendra | Tech Enthusiast",
+    description: "Portofolio Deni Sahendra - Tech Enthusiast",
     siteName: "Deni Sahendra Portfolio",
     images: [
       {
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deni Sahendra | Backend & Cloud Engineer",
-    description: "Portofolio Deni Sahendra - Backend & Cloud Engineer.",
+    title: "Deni Sahendra | Tech Enthusiast",
+    description: "Portofolio Deni Sahendra - Tech Enthusiast.",
     images: ["/icon.jpg"],
   },
   icons: {
