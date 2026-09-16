@@ -45,37 +45,14 @@ interface RSSResponse {
 const getFallbackPosts = (): Post[] => {
   return [
     {
-      title: "Building Scalable Microservices with Go",
-      link: "https://medium.com/@denisahendra123/building-scalable-microservices-with-go",
-      pubDate: "Dec 15, 2024",
+      title: "Sorry for the inconvenience, but it seems that the Medium feed is currently unavailable.",
+      link: "#",
+      pubDate: "N/A",
       author: "Deni Sahendra",
-      thumbnail: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*9UyV6zGJfL5yBbSJl0q3Ug.png",
-      description: "Learn how to design and implement microservices that can handle millions of requests efficiently.",
+      thumbnail: "https://via.placeholder.com/150",
+      description: "Please check back later or visit my Medium profile directly for the latest articles.",
     },
-    {
-      title: "Database Sharding Strategies for High-Traffic Apps",
-      link: "https://medium.com/@denisahendra123/database-sharding-strategies",
-      pubDate: "Dec 10, 2024",
-      author: "Deni Sahendra",
-      thumbnail: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*PqZx5V5MfLhKlmZQcU4p0Q.png",
-      description: "A deep dive into different sharding approaches and when to use each one in production.",
-    },
-    {
-      title: "Optimizing API Response Times: A Practical Guide",
-      link: "https://medium.com/@denisahendra123/optimizing-api-response-times",
-      pubDate: "Dec 5, 2024",
-      author: "Deni Sahendra",
-      thumbnail: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KXpLZxYqZJ8mWn7VpQ7CJw.png",
-      description: "Techniques to reduce latency and improve throughput in your REST APIs.",
-    },
-    {
-      title: "Docker Best Practices for Production Environments",
-      link: "https://medium.com/@denisahendra123/docker-best-practices",
-      pubDate: "Nov 28, 2024",
-      author: "Deni Sahendra",
-      thumbnail: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*XJpG8qHlZvQnKjHkNlU3Eg.png",
-      description: "Essential tips for building secure and efficient Docker containers.",
-    },
+    
   ];
 };
 
@@ -87,7 +64,7 @@ export default function Posts() {
     const fetchPosts = async () => {
       try {
         const response = await fetch(
-          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@denisahendra123"
+          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@denisahendra"
         );
         
         if (!response.ok) {
@@ -211,7 +188,7 @@ export default function Posts() {
 
         <div className="mt-8 text-center">
           <a
-            href="https://medium.com/@denisahendra123"
+            href="https://medium.com/@denisahendra"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted-foreground/60 hover:text-foreground transition-colors"

@@ -30,12 +30,12 @@ export const Spotlight = ({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="pointer-events-none absolute inset-0 h-full w-full"
+      className="pointer-events-none absolute inset-0 h-full w-full -z-10"
     >
       <motion.div
         animate={{ x: [0, xOffset, 0] }}
         transition={{ duration, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
-        className="absolute top-0 left-0 w-screen h-screen z-40 pointer-events-none"
+        className="absolute top-0 left-0 w-screen h-screen -z-10 pointer-events-none"
       >
         <div
           style={{
@@ -69,7 +69,7 @@ export const Spotlight = ({
       <motion.div
         animate={{ x: [0, -xOffset, 0] }}
         transition={{ duration, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
-        className="absolute top-0 right-0 w-screen h-screen z-40 pointer-events-none"
+        className="absolute top-0 right-0 w-screen h-screen -z-10 pointer-events-none"
       >
         <div
           style={{

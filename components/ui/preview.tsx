@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, ReactNode } from 'react';
-import { FiX } from 'react-icons/fi';
+import { useState, ReactNode, useEffect } from 'react';
+import { FiX, FiMaximize2, FiMinimize2 } from 'react-icons/fi';
 
 interface PreviewProps {
   fileId: string;
@@ -31,9 +31,41 @@ export function Preview({
   errorComponent,
 }: PreviewProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isFullscreen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+      document.body.style.top = `-${window.scrollY}px`;
+    } else {
+      const scrollY = document.body.style.top;
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    }
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.top = '';
+    };
+  }, [isOpen]);
 
   const embedUrl = `https://drive.google.com/file/d/${fileId}/preview`;
 
@@ -78,7 +110,7 @@ export function Preview({
   );
 
   const defaultError = (
-    <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-white dark:bg-zinc-900">
+    <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-white dark:bg-zinc-900 p-4 text-center">
       <div className="w-16 h-16 bg-destructive/10 flex items-center justify-center">
         <FiX className="w-8 h-8 text-destructive" />
       </div>
@@ -106,7 +138,7 @@ export function Preview({
 
       {isOpen && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-md"
+          className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/60 backdrop-blur-md"
           onClick={(e) => {
             if (e.target === e.currentTarget) handleClose();
           }}
@@ -114,10 +146,36 @@ export function Preview({
           <div 
             className={`
               relative bg-white dark:bg-zinc-900 shadow-2xl overflow-hidden
-              ${isFullscreen ? 'w-screen h-screen' : `w-full ${maxWidth} ${height}`}
+              ${isFullscreen 
+                ? 'w-screen h-screen rounded-none' 
+                : `w-full ${isMobile ? 'max-w-full h-[95vh]' : `${maxWidth} ${height}`}`
+              }
               transition-all duration-300 ease-out
+              rounded-lg sm:rounded-none
             `}
           >
+            <div className="absolute top-2 right-2 sm:top-3 sm:right-3 z-10 flex items-center gap-1">
+              <button
+                onClick={() => setIsFullscreen(!isFullscreen)}
+                className="p-1.5 sm:p-2 bg-black/10 dark:bg-white/10 hover:bg-black/20 dark:hover:bg-white/20 backdrop-blur-sm transition-all"
+                aria-label="Toggle fullscreen"
+              >
+                {isFullscreen ? (
+                  <FiMinimize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
+                ) : (
+                  <FiMaximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
+                )}
+              </button>
+              
+              <button
+                onClick={handleClose}
+                className="p-1.5 sm:p-2 bg-black/10 dark:bg-white/10 hover:bg-black/20 dark:hover:bg-white/20 backdrop-blur-sm transition-all"
+                aria-label="Close"
+              >
+                <FiX className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
+              </button>
+            </div>
+
             <div className="w-full h-full relative">
               {isLoading && (loadingComponent || defaultLoading)}
               {hasError && (errorComponent || defaultError)}

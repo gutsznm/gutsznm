@@ -23,9 +23,9 @@ export function ToggleTheme() {
       aria-label="Toggle theme"
     >
       {theme === "dark" ? (
-        <FiSun className="w-5 h-5" />
+        <FiSun className="w-4 h-4" />
       ) : (
-        <FiMoon className="w-5 h-5" />
+        <FiMoon className="w-4 h-4" />
       )}
     </button>
   );

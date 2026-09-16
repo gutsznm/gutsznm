@@ -7,33 +7,33 @@ import Image from "next/image";
 import { Preview } from '@/components/ui/preview';
 
 export default function Hero() {
-  const GOOGLE_DRIVE_FILE_ID = '1JmGCF-75KNVIzyi0U7yNQz_Bkr3p6rtA';
+  const GOOGLE_DRIVE_FILE_ID = '14HnwsZeWU6HB-YwVf0SM1dRfKrbrUM_e';
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-8">
+    <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 sm:px-8 pt-4 pb-16">
       <div className="w-full max-w-sm mx-auto text-center">
-      <div className="flex justify-center mb-4">
-        <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-border/40 hover:border-primary/40 transition-colors">
-          <Image
-            src="https://github.com/gutsznm.png"
-            alt="Deni Sahendra"
-            fill
-            className="object-cover"
-            priority
-          />
+        <div className="flex justify-center mb-4">
+          <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-border/40 hover:border-primary/40 transition-colors">
+            <Image
+              src="https://avatars.githubusercontent.com/gutsznm"
+              alt="Foto Profil Deni Sahendra - Cloud Engineer"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
-      </div>
-
-        <p className="text-xs sm:text-sm text-muted-foreground tracking-[0.3em] uppercase">
+  
+        <h1 className="text-xs sm:text-sm text-muted-foreground tracking-[0.3em] uppercase">
           Deni Sahendra
-        </p>
+        </h1>
 
         <div className="mt-2">
           <FlipWords />
         </div>
 
         <p className="mt-4 text-xs sm:text-sm text-muted-foreground font-light tracking-wide">
-          Building scalable systems with precision
+          Build Tech Solutions
         </p>
 
         <hr className="my-6 border-border/40" />

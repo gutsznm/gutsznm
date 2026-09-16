@@ -1,38 +1,24 @@
 "use client";
 
 import { 
-  SiGo, 
-  SiPython, 
   SiJavascript, 
   SiTypescript, 
-  SiDocker, 
-  SiKubernetes, 
-  SiPostgresql, 
+  SiPostgresql,
+  SiMysql,
   SiMongodb, 
-  SiRedis, 
-  SiNginx,
-  SiLinux,
   SiGit,
   SiGithubactions,
-  SiTerraform,
   SiGooglecloud
 } from "react-icons/si";
 
 const techStack = [
-  { name: "Go", icon: <SiGo /> },
-  { name: "Python", icon: <SiPython /> },
   { name: "TypeScript", icon: <SiTypescript /> },
   { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "MySQL", icon: <SiMysql /> },
   { name: "PostgreSQL", icon: <SiPostgresql /> },
   { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "Redis", icon: <SiRedis /> },
-  { name: "Docker", icon: <SiDocker /> },
-  { name: "Kubernetes", icon: <SiKubernetes /> },
-  { name: "Terraform", icon: <SiTerraform /> },
   { name: "GCP", icon: <SiGooglecloud /> },
-  { name: "Linux", icon: <SiLinux /> },
   { name: "Git", icon: <SiGit /> },
-  { name: "Nginx", icon: <SiNginx /> },
   { name: "GitHub Actions", icon: <SiGithubactions /> },
 ];
 
