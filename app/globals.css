@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  /* DESIGN.md Tokens - Light Mode */
+  --bg-canvas-soft: #f6f5f4;
+  --bg-canvas: #ffffff;
+  --bg-surface: #ffffff;
+  --text-ink: #000000;
+  --text-ink-secondary: #31302e;
+  --text-ink-muted: #615d59;
+  --text-ink-faint: #a39e98;
+  --border-hairline: #e6e6e6;
+  
+  --color-primary: #0075de;
+  --color-primary-active: #005bab;
+  --color-secondary: #213183;
+  
+  /* Sticker palette */
+  --color-accent-sky: #62aef0;
+  --color-accent-purple: #d6b6f6;
+  --color-accent-purple-deep: #391c57;
+  --color-accent-pink: #ff64c8;
+  --color-accent-orange: #dd5b00;
+  --color-accent-teal: #2a9d99;
+  --color-accent-green: #1aae39;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  /* DESIGN.md Tokens - Dark Mode (Notion Dark) */
+  --bg-canvas-soft: #191919;
+  --bg-canvas: #202020;
+  --bg-surface: #252525;
+  --text-ink: #ffffff;
+  --text-ink-secondary: #d4d4d4;
+  --text-ink-muted: #9b9b9b;
+  --text-ink-faint: #6b6b6b;
+  --border-hairline: #2e2e2e;
+  
+  --color-primary: #2383e2;
+  --color-primary-active: #005bab;
+  --color-secondary: #162054;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --font-sans: var(--font-sans);
+  --color-notion-primary: var(--color-primary);
+  --color-notion-primary-active: var(--color-primary-active);
+  --color-notion-secondary: var(--color-secondary);
+  
+  --color-notion-canvas: var(--bg-canvas);
+  --color-notion-canvas-soft: var(--bg-canvas-soft);
+  --color-notion-surface: var(--bg-surface);
+  --color-notion-ink: var(--text-ink);
+  --color-notion-ink-secondary: var(--text-ink-secondary);
+  --color-notion-ink-muted: var(--text-ink-muted);
+  --color-notion-ink-faint: var(--text-ink-faint);
+  --color-notion-hairline: var(--border-hairline);
+
+  /* Sticker colors */
+  --color-sticker-sky: #62aef0;
+  --color-sticker-purple: #d6b6f6;
+  --color-sticker-purple-deep: #391c57;
+  --color-sticker-pink: #ff64c8;
+  --color-sticker-orange: #dd5b00;
+  --color-sticker-teal: #2a9d99;
+  --color-sticker-green: #1aae39;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-canvas-soft);
+  color: var(--text-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Layered soft shadow from DESIGN.md (Level 1) */
+.shadow-notion-soft {
+  box-shadow: 
+    rgba(0, 0, 0, 0.04) 0px 0.175px 1.041px,
+    rgba(0, 0, 0, 0.05) 0px 0.8px 2.925px,
+    rgba(0, 0, 0, 0.06) 0px 2.025px 7.847px,
+    rgba(0, 0, 0, 0.08) 0px 4px 18px;
+}
+
+.dark .shadow-notion-soft {
+  box-shadow: 
+    rgba(0, 0, 0, 0.3) 0px 1px 3px,
+    rgba(0, 0, 0, 0.4) 0px 4px 12px;
+}
+
+/* Elevated shadow from DESIGN.md (Level 2) */
+.shadow-notion-elevated {
+  box-shadow:
+    rgba(0, 0, 0, 0.03) 0px 1px 3px,
+    rgba(0, 0, 0, 0.06) 0px 5px 15px,
+    rgba(0, 0, 0, 0.09) 0px 23px 52px;
+}
+
+.dark .shadow-notion-elevated {
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 6px,
+    rgba(0, 0, 0, 0.6) 0px 10px 30px;
+}
+
+/* Display typography negative tracking rules per DESIGN.md */
+.tracking-display-1 {
+  letter-spacing: -2.125px;
+}
+.tracking-display-2 {
+  letter-spacing: -1.875px;
+}
+.tracking-heading-1 {
+  letter-spacing: -1px;
+}
+.tracking-heading-2 {
+  letter-spacing: -0.625px;
+}
+.tracking-heading-3 {
+  letter-spacing: -0.25px;
 }
